@@ -8,18 +8,19 @@
 <body>
     <h1>club Sign Up</h1>
 
-    <form action="#">
+    <form action="display.html" method="GET">
          <label for="Full Name">
           Name </label><input 
          id="name"
          name="full name" 
          type="text"
+         value="Dawoud"
          required>
 
 <br>
 
          <label for="email">
-          Email</label><input 
+          Email</label><input placeholder="You@bergen.org"
          id="email"
          name="email" 
          type="email"
@@ -33,7 +34,7 @@
          name="age" 
          type="number"
          required 
-          min="12"
+          min="12"   m
             max="20">
             <br>
 
@@ -48,11 +49,29 @@
             <label for="Period">Select period input:</label>
 <br>
             <label for="when">when <input  today type="checkbox" name="Today " id="when"></label>
-        <button type="submit"> Join</button>
+      
         
 
-         
+         <fieldset>
+
+<legend> WHat day can you meet</legend>
+<input type="checkbox" id="mon" name="days" value="monday">
+<label for="mon"> monday</label>
+         </fieldset>
         </form>
-   
+
+        <fieldset>
+<label for="WHy do you want to join"></label>
+<textarea name="why" rows=3 id="why"></textarea>
+
+
+        </fieldset>
+
+          <label for="grade">Grade:</label>
+  <select id="grade" name="size">
+    <option value="9">freshman</option>
+    <option value="10">sophmore</option>
+  </select>
+     <button type="submit"> Join</button>
 </body>
 </html>
